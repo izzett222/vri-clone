@@ -10,7 +10,7 @@ export default function Hero() {
         You don’t just become something, you become someone
       </h1>
       <div className="w-full translate-y-1/2 lg:px-[30px]">
-        <div className="flex flex-col md:flex-row shadow-small bg-white">
+        <div className="flex flex-col md:flex-row shadow-small bg-white 2xl:mx-[130px]">
           <div className="bg-primary flex-[3] flex px-10 py-[30px] relative">
             <input
               placeholder="Search..."

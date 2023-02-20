@@ -36,8 +36,8 @@ export default function Menu() {
     },
   ];
   return (
-    <div>
-      <div className="flex flex-col bg-white px-5 sm:px-[30px] md:flex-row flex-wrap py-[60px] gap-5">
+    <div className="bg-white">
+      <div className="flex flex-col  px-5 sm:px-[30px] md:flex-row flex-wrap py-[60px] 2xl:mx-[130px] gap-5">
         {programs.map((el, i) => {
            return (
             <div key={i} className={"flex-1 p-[30px]-"}>
@@ -66,7 +66,7 @@ export default function Menu() {
             Featured
           </h2>
           <div className="md:shadow-small p-5 flex-1 flex flex-col sm:flex-row gap-[60px] sm:items-center lg:items-stretch lg:flex-col justify-between">
-            <div className="flex flex-col gap-1 flex-1">
+            <div className="flex flex-col gap-1 flex-1 ">
               {["Home", "Education", "Research"].map((item, e) => {
                 return (
                   <Link

@@ -24,10 +24,10 @@ export default function Blog() {
   ];
   return (
     <div className="bg-white px-5 py-[60px] sm:px-[30px]">
-      <h2 className="text-sec text-[38px] leading-[56px] font-light mb-[25px]">
+      <h2 className="text-sec text-[38px] leading-[56px] font-light mb-[25px] 2xl:mx-[130px]">
         Working at VU Amsterdam?
       </h2>
-      <div className="flex -mx-5 overflow-hidden xl:justify-center pb-[60px]">
+      <div className="flex -mx-5 overflow-hidden xl:justify-center 2xl:justify-start pb-[60px] 2xl:mx-[130px]">
         {data.map((el, i) => {
           return (
             <Link
@@ -46,7 +46,7 @@ export default function Blog() {
           );
         })}
       </div>
-      <div className="flex justify-end">
+      <div className="flex justify-end 2xl:mx-[130px]">
         <div className="bg-[#fcd3b6] justify-between px-4 flex w-[120px] h-[60px]">
           <Image
             src={right}

@@ -66,7 +66,7 @@ export default function Calendar() {
   ];
   return (
     <div className="bg-white pb-[45px]">
-      <div className="flex justify-between px-5 sm:px-[30px]  py-[45px] gap-6">
+      <div className="flex justify-between px-5 sm:px-[30px]  py-[45px] gap-6 2xl:mx-[130px]">
         <h2 className="text-[#0077b3] text-[38px] leading-[56px] font-light flex-1">
           Calendar
         </h2>
@@ -82,7 +82,7 @@ export default function Calendar() {
           );
         })}
       </div>
-      <div className="px-5 sm:px-[30px]">
+      <div className="px-5 sm:px-[30px] 2xl:mx-[130px]">
         <div className="flex overflow-auto hide-scroll">
           {events.map((el, i) => {
             return (

@@ -10,7 +10,7 @@ export default function Footer() {
     "Web archive",
   ];
   return <footer className="bg-primary py-[30px] px-5 sm:px-[30px]">
-    <div className="flex gap-x-3 gap-y-1 flex-wrap">
+    <div className="flex gap-x-3 gap-y-1 flex-wrap 2xl:mx-[130px]">
         {data.map((el, i) => {
             return <div key={i} className="text-white flex items-center gap-1">
                 <span>{el}</span>
@@ -18,6 +18,6 @@ export default function Footer() {
             </div>
         })}
     </div>
-    <p className="text-white mt-5">Copyright © 2023 - Vrije Universiteit Amsterdam</p>
+    <p className="text-white mt-5 2xl:mx-[130px]">Copyright © 2023 - Vrije Universiteit Amsterdam</p>
   </footer>;
 }

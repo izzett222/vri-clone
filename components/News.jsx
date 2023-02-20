@@ -34,10 +34,10 @@ export default function News() {
   ];
   return (
     <div className="bg-[#FAF7F5] px-5 sm:px-[30px] py-[45px]">
-      <h3 className="text-[#3b2171] text-[38px] font-light leading-[56px] mb-[25px]">
+      <h3 className="text-[#3b2171] text-[38px] font-light leading-[56px] mb-[25px] 2xl:mx-[130px]">
         news
       </h3>
-      <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row">
+      <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row 2xl:mx-[130px]">
         <div className="md:w-[57%] flex flex-col gap-5">
           {data.map((el, i) => {
             return (
@@ -59,8 +59,8 @@ export default function News() {
         <div className="flex-1 flex flex-col md:flex-row lg:flex-col lg:flex-initial justify-between gap-5 lg:gap-0 lg:pl-[60px]">
           {data1.map((el, i) => {
             return (
-              <div key={i} className={"flex flex-1 flex-row md:flex-col lg:flex-row gap-5"}>
-                <div className="relative  flex-1 w-[284px]  md:w-full md:h-[231px] lg:w-[114px] lg:h-[86px]">
+              <div key={i} className={"flex flex-1 lg:flex-initial flex-row md:flex-col lg:flex-row gap-5"}>
+                <div className="relative  flex-1 lg:flex-initial w-[284px]  md:w-full md:h-[231px] lg:w-[114px] lg:h-[86px]">
                   <Image src={impact} alt="" className="object-cover w-full h-full" />
                 </div>
 
