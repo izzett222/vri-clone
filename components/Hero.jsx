@@ -5,7 +5,7 @@ import whiteSearch from "/public/white-search.svg";
 
 export default function Hero() {
   return (
-    <div className="bg-[#fff] px-5 sm:px-[30px]">
+    <div className="bg-[#fff] px-5 sm:px-[30px] pt-20">
       <h1 className="font-light lg:ml-[93px] text-[45px] leading-[60px] text-dark pt-[30px] pb-[60px]">
         You don’t just become something, you become someone
       </h1>

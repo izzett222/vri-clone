@@ -13,9 +13,9 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="bg-[#EEEBE9]">
+    <div className="bg-[#EEEBE9] overflow-hidden">
+      <Header />
       <Wrapper>
-        <Header />
         <Hero />
       </Wrapper>
       <div className="bg-banner h-[460px] bg-cover"></div>
