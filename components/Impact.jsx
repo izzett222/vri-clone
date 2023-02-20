@@ -32,9 +32,10 @@ export default function Impact() {
             <Image src={right} alt="" width={20} height={24} />
           </div>
         </div>
-        <div className="md:w-[576px] relative px-[30px] pt-[30px] pb-[60px] md:-translate-y-1/2 bg-white shadow-small mx-auto">
+        <div className="md:w-[576px]- md:w-[75%] lg:w-[58.3333%] relative px-[30px] pt-[30px] pb-[60px] md:-translate-y-1/2 bg-white shadow-small mx-auto">
+        <div className="absolute -top-4 left-0 right-0 h-4"></div>
           <h4 className="text-2xl text-sec font-light">Science to Impact</h4>
-          <p className="text-dark my-[15px]">
+          <p className="text-dark my-[15px] text-lg">
             An interview with entrepreneurial scientist Davide Iannuzzi, Chief
             Impact Officer of Vrije Universiteit Amsterdam
           </p>
