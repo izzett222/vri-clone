@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Wrapper from "./Wrapper";
 import right from "/public/black-right.svg";
 import plus from "/public/plus.svg";
@@ -10,6 +10,10 @@ import rightSmall from "/public/right-small.svg";
 
 export default function NavBar() {
   const [extra, setExtra] = useState(0);
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => (document.body.style.overflow = "scroll");
+});
   const data = [
     { text: "About VU Amsterdam", link: "/about" },
     { text: "VU press office", link: "/office" },
