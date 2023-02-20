@@ -15,7 +15,7 @@ export default function Impact() {
     ]
   return (
     <div className="pt-10 bg-[#faf7f5]">
-      <h2 className="px-5 sm:px-[30px] text-sec font-light text-[38px] leading-[56px] mb-[25px]">
+      <h2 className="px-5 sm:px-[30px] text-sec font-light text-[38px] leading-[56px] mb-[15px] md:mb-[25px]">
         impact
       </h2>
       <div>
@@ -43,7 +43,7 @@ export default function Impact() {
             <Image src={"/black-right.svg"} alt="" width={16} height={18} />
           </Link>
           
-          <div className="absolute flex justify-end bottom-0 left-0 right-0 gap-[25px]">
+          <div className="absolute hidden md:flex justify-end bottom-0 left-0 right-0 gap-[25px]">
             <div className="flex gap-5 items-center">
               <div className="w-5 h-5 rounded-full bg-sec"></div>
               <div className="w-2.5 h-2.5 rounded-full bg-sec"></div>

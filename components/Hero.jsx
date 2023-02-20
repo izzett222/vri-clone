@@ -5,12 +5,12 @@ import whiteSearch from "/public/white-search.svg";
 
 export default function Hero() {
   return (
-    <div className="bg-[#fff] px-5 sm:px-[30px] pt-20">
-      <h1 className="font-light lg:ml-[93px] text-[45px] leading-[60px] text-dark pt-[30px] pb-[60px]">
+    <div className="bg-[#fff] pt-20">
+      <h1 className="font-light lg:mx-[130px] text-[45px] leading-[60px] text-dark pt-[30px] px-5 sm:px-[30px]">
         You don’t just become something, you become someone
       </h1>
-      <div className="w-full translate-y-1/2 bg-white">
-        <div className="flex flex-col md:flex-row shadow-small">
+      <div className="w-full translate-y-1/2 lg:px-[30px]">
+        <div className="flex flex-col md:flex-row shadow-small bg-white">
           <div className="bg-primary flex-[3] flex px-10 py-[30px] relative">
             <input
               placeholder="Search..."

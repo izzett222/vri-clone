@@ -38,7 +38,7 @@ export default function Info() {
       ],
     },
     {
-      title: "Education",
+      title: "Research",
       items: [
         "Bachelors programmes",
         "Masters programmes",
@@ -49,7 +49,7 @@ export default function Info() {
     },
   ];
   return (
-    <div className="lg:-mt-20 bg-[#FEFEFE] px-5 sm:px-0 md:px-[30px]">
+    <div className="lg:-mt-20 bg-[#FEFEFE] px-5 md:px-[30px]">
       <div className="flex gap-x-8 md:flex-wrap justify-center items-center py-[30px] md:px-6">
         {data.map((el, i) => {
           return (
@@ -66,7 +66,7 @@ export default function Info() {
           );
         })}
       </div>
-      <div className="flex flex-col md:flex-row mt-[30px] pb-[60px] gap-5">
+      <div className="flex flex-col md:flex-row mt-[30px] pb-[15px] gap-5">
         {programs.map((el, i) => {
           return (
             <div key={i} className={"shadow-small flex-1 p-[30px]"}>
@@ -92,8 +92,8 @@ export default function Info() {
           );
         })}
       </div>
-      <div className="bg-primary flex flex-col md:flex-row  py-[45px] px-[30px] justify-center gap-3 md:justify-between my-10 items-center text-dark">
-        <h3 className="text-white text-2xl font-medium w-max">
+      <div className="bg-primary flex flex-col md:flex-row  py-[45px] px-[30px] justify-center gap-[35px] md:justify-between my-10 items-center text-dark">
+        <h3 className="text-white text-2xl font-medium text-center sm:text-left">
           Do you also want to change your world?
         </h3>
         <button className="py-[15px] px-[30px] bg-white text-2xl font-medium">
