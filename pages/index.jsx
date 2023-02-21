@@ -18,7 +18,7 @@ export default function Home() {
       <Wrapper>
         <Hero />
       </Wrapper>
-      <div className="bg-banner h-[346px] lg:h-[460px] bg-cover bg-center"></div>
+      <div className="bg-banner h-[170px] md:h-[346px] lg:h-[460px] bg-cover bg-center"></div>
       <Wrapper>
         <Info />
         <Impact />
