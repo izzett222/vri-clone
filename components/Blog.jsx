@@ -27,7 +27,7 @@ export default function Blog() {
     <div className="bg-white py-[30px] md:py-[60px]">
       <IWrapper>
         <h2 className="text-sec text-[30px] leading-[36px] md:text-[38px] md:leading-[56px] font-light mb-[15px] md:mb-[25px] ">
-          Working at VU Amsterdam?
+        We are VU Amsterdam
         </h2>
         <div className="flex -mx-5 overflow-hidden xl:justify-center 2xl:justify-start pb-[60px] ">
           {data.map((el, i) => {

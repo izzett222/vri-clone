@@ -48,13 +48,18 @@ export default function News() {
                     <Image src={el.img} className="object-cover" fill alt="" />
                   </div>
 
-                  <div className="">
-                    <h5 className="font-medium md:font-bold text-lg leading-[30px] text-[#3b2171]">
-                      {el.date}
-                    </h5>
-                    <p className="text-lg leading-[30px] md:text-2xl font-light text-dark">
-                      {el.text}
-                    </p>
+                  <div className="flex flex-1 flex-col justify-between">
+                    <div>
+                      <h5 className="font-medium md:font-bold text-lg leading-[30px] text-[#3b2171]">
+                        {el.date}
+                      </h5>
+                      <p className="text-lg leading-[30px] md:text-2xl font-light text-dark">
+                        {el.text}
+                      </p>
+                    </div>
+                    <div className="w-full flex justify-end">
+                      <Image src={blackArrow} width={24} height={18} alt="" />
+                    </div>
                   </div>
                 </div>
               );
@@ -78,11 +83,12 @@ export default function News() {
                     />
                   </div>
 
-                  <div className="flex-1">
+                  <div className="flex-1 relative">
                     <h5 className="font-medium text-lg text-[#3b2171]">
                       {el.date}
                     </h5>
                     <p className="text-lg font-light text-dark">{el.text}</p>
+                    <Image src={blackArrow} width={24} className="absolute bottom-0 right-0" height={18} alt="" />
                   </div>
                 </div>
               );
