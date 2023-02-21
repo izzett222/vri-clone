@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import down from "/public/down.svg";
 import blackArrow from "/public/black-right.svg";
+import IWrapper from "./IWrapper";
 
 export default function Calendar() {
   const data = [
@@ -19,19 +20,19 @@ export default function Calendar() {
       text: "PhD defence by T.J.H. Jonkers",
     },
     {
-      title: "PhD Defences",
+      title: "Lectures",
       date: "20 February 2023",
-      text: "PhD defence by T.J.H. Jonkers",
+      text: "ABRI lunch seminar Dr. Paula Jarzabkowski",
     },
     {
-      title: "PhD Defences",
+      title: "Social events",
       date: "20 February 2023",
-      text: "PhD defence by T.J.H. Jonkers",
+      text: "Board game night - Life is Better in 3D",
     },
     {
-      title: "PhD Defences",
+      title: "Other events",
       date: "20 February 2023",
-      text: "PhD defence by T.J.H. Jonkers",
+      text: "VU Pride TalkS!",
     },
     {
       title: "PhD Defences",
@@ -66,43 +67,61 @@ export default function Calendar() {
   ];
   return (
     <div className="bg-white pb-[45px]">
-      <div className="flex justify-between px-5 sm:px-[30px]  py-[45px] gap-6 2xl:mx-[130px]">
-        <h2 className="text-[#0077b3] text-[38px] leading-[56px] font-light flex-1">
-          Calendar
-        </h2>
-        {data.map((el, i) => {
-          return (
-            <div
-              key={i}
-              className="flex-1 bg-white shadow-small flex justify-between py-2.5 px-5 items-center"
-            >
-              <span className="text-lg font-medium text-dark">{el.text}</span>
-              <Image src={down} alt="" width={20} height={20} />
-            </div>
-          );
-        })}
-      </div>
-      <div className="px-5 sm:px-[30px] 2xl:mx-[130px]">
-        <div className="flex overflow-auto hide-scroll">
-          {events.map((el, i) => {
-            return (
-              <div key={i} className={"min-w-[220px] mr-[75px]"}>
-                <Link
-                  href={"/"}
-                  className="underline font-light text-lg text-dark"
+      <IWrapper>
+        <div className="flex flex-col md:flex-row md:justify-between py-[45px] gap-6">
+          <h2 className="text-[#0077b3] text-[38px] leading-[56px] font-light flex-1">
+            Calendar
+          </h2>
+          <div className="flex gap-5">
+            {data.map((el, i) => {
+              return (
+                <div
+                  key={i}
+                  className="flex-1 bg-white shadow-small flex justify-between md:w-[232px] py-2.5 px-5 items-center"
                 >
-                  {el.title}
-                </Link>
-                <h3 className="text-[#0077b3] text-lg font-bold">{el.date}</h3>
-                <p className="text-dark text-2xl font-light">{el.text}</p>
-              </div>
-            );
-          })}
+                  <span className="text-lg font-medium text-dark">
+                    {el.text}
+                  </span>
+                  <Image src={down} alt="" width={20} height={20} />
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
-      <div className="flex justify-center">
-        <Link href="/" className="flex text-lg font-medium text-dark items-center gap-2 mt-28">View calendar <Image src={blackArrow} className={"w-4"} alt="" /></Link>
-      </div>
+        <div className="">
+          <div className="flex overflow-auto hide-scroll">
+            {events.map((el, i) => {
+              return (
+                <div
+                  key={i}
+                  className={`min-w-[220px] mr-[35px] lg:mr-[75px] 2xl:mr-5 ${
+                    i > 3 ? "2xl:hidden" : ""
+                  }`}
+                >
+                  <Link
+                    href={"/"}
+                    className="underline font-light text-lg text-dark"
+                  >
+                    {el.title}
+                  </Link>
+                  <h3 className="text-[#0077b3] text-lg font-bold">
+                    {el.date}
+                  </h3>
+                  <p className="text-dark md:text-2xl text-lg leading-[30px] md:leading-[30px] font-light">{el.text}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <Link
+            href="/"
+            className="flex text-lg font-medium text-dark items-center gap-2 mt-[120px]"
+          >
+            View calendar <Image src={blackArrow} className={"w-4"} alt="" />
+          </Link>
+        </div>
+      </IWrapper>
     </div>
   );
 }
